@@ -14,34 +14,45 @@
     max-width: 85%;
     width: 100%;
   }
-
-  .container{
+  
+  hr {
+    margin: 2rem 0rem;
+  }
+  
+  /** spaces **/
+  
+  .margin-md {
+    margin: 2rem;
+  }
+  
+  /** container **/
+  .container {
     padding: 0rem 1rem;
   }
-
-.container-center{
+  
+  .container-center {
     max-width: 900px;
     width: 100%;
     margin: auto;
-}
-
-.link{
+  }
+  
+  /** links **/
+  .link {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
-}
-
-.link-primary{
+  }
+  
+  .link-primary {
     max-width: 140px;
     padding: 0.6rem 1.2rem;
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     margin: 1rem auto;
     border-radius: 2rem;
-}
-
-
-.link-secondary {
+  }
+  
+  .link-secondary {
     max-width: 140px;
     margin: 1rem;
     padding: 0.6rem 1.2rem;
@@ -49,31 +60,34 @@
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
   }
-
-  .list-non-bullet{
+  
+  /** look into BEM naming convention for CSS **/
+  
+  /** lists **/
+  
+  .list-non-bullet {
     list-style: none;
     padding-inline-start: 0px;
   }
-
-  .list-item-inline{
+  
+  .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
   }
-
-
-  /* navigation */
-  .navigation{
+  
+  /** navigation **/
+  
+  .navigation {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    border-bottom-left-radius:1rem ;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
-
-  .navigation .nav-brand{
-    font-weight:bold;
+  
+  .navigation .nav-brand {
+    font-weight: bold;
   }
-
+  
   .nav-brand a {
     text-decoration: none;
     color: inherit;
@@ -131,5 +145,70 @@
   
   .ow {
     background-color: var(--off-white);
+  }
+  
+  /** footers **/
+  
+  .footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+  }
+  
+  .footer .link {
+    color: white;
+  }
+  
+  .footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .footer ul {
+    padding-inline-start: 0px;
+  }
+  
+  /** projects **/
+  .showcase-list {
+    /* padding: 2rem; */
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 3rem auto;
+  }
+  .showcase-list h1 {
+    margin: 0.5rem;
+  }
+  
+  .showcase-list p {
+    padding-bottom: 1rem;
+  }
+  
+  /** blogs **/
+  
+  .showcase-blog {
+    padding-bottom: 6rem;
+  }
+  
+  @media (max-width: 900px) {
+    body {
+      max-width: 95%;
+      width: 100%;
+    }
+  
+    .list-item-inline {
+      display: inline;
+      padding: 0rem;
+    }
+  
+    .container-center {
+      width: auto;
+    }
+  
+    .link-primary {
+      display: block;
+    }
   }
   
