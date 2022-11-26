@@ -234,6 +234,10 @@
       max-width: 95%;
       width: 100%;
     }
+
+    a.link{
+      padding: 0.7rem;
+    }
   
     .list-item-inline {
       display: inline;
