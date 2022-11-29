@@ -221,6 +221,11 @@
     padding-bottom: 6rem;
   }
 
+  .blog{
+    text-align: left;
+  }
+
+
   ::-webkit-scrollbar {
     background-color: #1f2325;
     color: #ded5c6;
